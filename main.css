@@ -39,8 +39,9 @@ body{
     align-items: flex-start;
     justify-content: center;
     color: white;
-    padding-left: 100px;
-    padding-block: 50px;
+
+    /* padding-left: 100px;
+    padding-block: 50px; */
 }
 
 .header__title{
@@ -89,6 +90,7 @@ body{
     font-weight: bold;
     box-shadow: 4px 4px 4px black;
     margin-block: 30px;
+    background-color: white;
 }
 
 .header__right{
@@ -111,9 +113,31 @@ body{
     width: 200px;
 }
 
-/* @media (max-width: 576px) {
+@media (max-width: 576px) {
     .header{
         flex-direction: column-reverse;
+    }
+
+    /* 
+
+    
+
+    
+    
+    
+
+
+    
+
+     */
+
+    .header__left{
+        width: 100%;
+        background-position-x: -120px;
+        background-position-y: 50px;
+        align-items: center;
+        padding-inline: 40px;
+        padding-block: 50px;
     }
 
     .header__title{
@@ -121,19 +145,33 @@ body{
         font-size: 30px;
         display: flex;
         justify-content: center;
+        text-align: center;
     }
 
-    .header__left{
-    width: 100%;
-    background-position-x: -120px;
-    background-position-y: 50px;
-    align-items: center;
-    padding-inline: 40px;
-    padding-block: 50px;
+    .header__right{
+        width: 100%;
+        background-image: none;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__left__price{
+        margin-inline: 20px;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header__left__offer__description{
+        text-shadow: none;
     }
 
     .header__left__offer{
-        margin-inline: 20px;
         display: flex;
         align-items: flex-start;
         justify-content: center;
@@ -143,22 +181,14 @@ body{
         font-size: 50px;
     }
     
-    .header__left__offer__description{
-        text-shadow: none;
-    }
+}
 
-
-    .header__right{
-    width: 100%;
-    background-image: none;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+@media (max-width: 768px) {
+    .header{
+        flex-direction: column-reverse;
     }
     
-} */
+}
 
 /* SECTION */
 
