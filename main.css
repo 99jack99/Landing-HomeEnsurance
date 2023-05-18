@@ -1,0 +1,245 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*::after, *::before{
+    font-family: inherit;
+}
+
+.wall{
+    background-color: #D9D9D9;
+}
+
+
+/* HEADER */
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.header__left{
+    width: 50%;
+    background-image: url("./imgs/blob.svg");
+    background-repeat: no-repeat;
+    background-position-x: -200px;
+    background-position-y: -200px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    padding-left: 100px;
+    padding-block: 50px;
+}
+
+.header__title{
+    margin-top: 30px;
+    text-shadow: 2px 2px black;
+}
+
+.header__left__price{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-block: 20px;
+}
+
+.header__left__price > *{
+    margin: 0;
+    font-size: 25px;
+}
+
+.header__left__offer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-block: 20px;
+}
+
+.header__left__offer__ast{
+    font-size: 40px;
+    color: yellow;
+    margin-right: 10px;
+}
+
+.header__left__offer__description{
+    font-size: 25px;
+    text-shadow: 1px 1px black;
+}
+
+.button{
+    padding: 15px 60px;
+    border-radius: 3px;
+    border-style: none;
+    color: #DC0028;
+    font-size: 25px;
+    font-weight: bold;
+    box-shadow: 4px 4px 4px black;
+    margin-block: 30px;
+}
+
+.header__right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-image: url("./imgs/housy.svg");
+    background-repeat: no-repeat;
+    background-position-x: 50px;
+    background-position-y: -50px;
+    background-size: auto;
+    padding-block: 50px;
+}
+
+.header__right__logo{
+    justify-self: flex-end;
+    height: 100px;
+    width: 200px;
+}
+
+/* @media (max-width: 576px) {
+    .header{
+        flex-direction: column-reverse;
+    }
+
+    .header__title{
+        margin-top: 10px;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header__left{
+    width: 100%;
+    background-position-x: -120px;
+    background-position-y: 50px;
+    align-items: center;
+    padding-inline: 40px;
+    padding-block: 50px;
+    }
+
+    .header__left__offer{
+        margin-inline: 20px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .header__left__offer__ast{
+        font-size: 50px;
+    }
+    
+    .header__left__offer__description{
+        text-shadow: none;
+    }
+
+
+    .header__right{
+    width: 100%;
+    background-image: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    }
+    
+} */
+
+/* SECTION */
+
+.advantages-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.advantages-section__title{
+    margin-block: 30px;
+}
+
+.advantages-section__description{
+    margin-inline: 5%;
+}
+
+.advantages-section__cards{
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    margin-block: 50px;
+    padding-left: 20%;
+
+    background-image: url("./imgs/check.svg");
+    background-repeat: no-repeat;
+   
+    background-position-x: 750px;
+    background-position-y: 150px;
+    background-size: auto;
+}
+
+.advantages-section__cards__align{
+    display: flex;
+    align-items: row;
+}
+
+.advantages-section__cards__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 250px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px; 
+}
+
+.advantages-section__cards__card > img{
+    height: 50px;
+    width: 50px;
+}
+
+/* @media (max-width: 576px) {
+    .advantages-section__cards{
+        padding-left: 0;
+    }
+
+    .advantages-section__description{
+        margin-block: 30px;
+        font-size: 25px;
+    }
+    
+} */
+
+/* FOOTER */
+
+.footer{
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-block: 20px;
+}
+
+.footer__item{
+    margin-inline:20px;
+}
