@@ -246,7 +246,7 @@ body{
     width: 50px;
 }
 
-/* @media (max-width: 576px) {
+@media (max-width: 576px) {
     .advantages-section__cards{
         padding-left: 0;
     }
@@ -254,9 +254,10 @@ body{
     .advantages-section__description{
         margin-block: 30px;
         font-size: 25px;
+        text-align: center;
     }
     
-} */
+}
 
 /* FOOTER */
 
