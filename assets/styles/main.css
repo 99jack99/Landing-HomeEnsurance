@@ -28,8 +28,8 @@ body{
 }
 
 .header__left{
-    width: 50%;
-    background-image: url("./imgs/blob.svg");
+    /* width: 50%; */
+    background-image: url("../imgs/blob.svg");
     background-repeat: no-repeat;
     background-position-x: -200px;
     background-position-y: -200px;
@@ -37,7 +37,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     color: white;
 
     /* padding-left: 100px;
@@ -46,14 +46,14 @@ body{
 
 .header__title{
     margin-top: 30px;
-    text-shadow: 2px 2px black;
+    font-size: 60px;
+    text-shadow: 2px 2px 5px black;
 }
 
 .header__left__price{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
     margin-block: 20px;
 }
 
@@ -61,6 +61,24 @@ body{
     margin: 0;
     font-size: 25px;
 }
+
+.header__left__price > p{
+    font-weight: 200;
+}
+
+.price-amount{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.uno{
+    font-weight: 200;
+    font-size: 25px;
+}
+
 
 .header__left__offer{
     display: flex;
@@ -72,13 +90,14 @@ body{
 
 .header__left__offer__ast{
     font-size: 40px;
-    color: yellow;
+    color: black;
     margin-right: 10px;
 }
 
 .header__left__offer__description{
     font-size: 25px;
-    text-shadow: 1px 1px black;
+    text-shadow: 1px 1px 5px black;
+    font-style: italic;
 }
 
 .button{
@@ -88,27 +107,45 @@ body{
     color: #DC0028;
     font-size: 25px;
     font-weight: bold;
-    box-shadow: 4px 4px 4px black;
     margin-block: 30px;
     background-color: white;
+    box-shadow: red 10px 8px 0px -3px, black 10px 8px;
+    transition: 0.2s;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.button-arrows{
+    height: 25px;
+    width: 25px;
+}
+
+.button:hover{
+    box-shadow:  black 3px 3px;
+    transition: 0.5s;
 }
 
 .header__right{
-    width: 50%;
+    /* background-color: gold; */
+    /* width: 50%; */
+    height: 800px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: flex-start;
-    background-image: url("./imgs/housy.svg");
+    background-image: url("../imgs/hero-ilustration.svg");
     background-repeat: no-repeat;
-    background-position-x: 50px;
-    background-position-y: -50px;
-    background-size: auto;
-    padding-block: 50px;
+    background-position: bottom;
+    /* background-position-x: 50px;
+    background-position-y: -50px; */
+   /*  background-size: auto; */
+    /* padding-block: 50px; */
 }
 
 .header__right__logo{
-    justify-self: flex-end;
     height: 100px;
     width: 200px;
 }
@@ -117,22 +154,8 @@ body{
     .header{
         flex-direction: column-reverse;
     }
-
-    /* 
-
-    
-
-    
-    
-    
-
-
-    
-
-     */
-
     .header__left{
-        width: 100%;
+ /*        width: 100%; */
         background-position-x: -120px;
         background-position-y: 50px;
         align-items: center;
@@ -149,9 +172,9 @@ body{
     }
 
     .header__right{
-        width: 100%;
+     /*    width: 100%; */
         background-image: none;
-    
+        height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -180,12 +203,23 @@ body{
     .header__left__offer__ast{
         font-size: 50px;
     }
+
+    .button{
+        white-space: nowrap;
+    }
     
 }
 
 @media (max-width: 768px) {
     .header{
         flex-direction: column-reverse;
+    }
+
+    .header__left__offer{
+        background-color: rgba(0, 0, 0, 0.121);
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
     }
     
 }
@@ -205,7 +239,10 @@ body{
 }
 
 .advantages-section__description{
-    margin-inline: 5%;
+    margin: 50px;
+    text-align: center;
+    font-weight: 300px;
+    font-size: 18px;
 }
 
 .advantages-section__cards{
@@ -216,13 +253,15 @@ body{
     margin-block: 50px;
     padding-left: 20%;
 
-    background-image: url("./imgs/check.svg");
+    background-image: url("../imgs/advantages-ilustration.svg");
     background-repeat: no-repeat;
    
-    background-position-x: 750px;
+    background-position-x: 850px;
     background-position-y: 150px;
     background-size: auto;
 }
+
+
 
 .advantages-section__cards__align{
     display: flex;
@@ -233,13 +272,27 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    
     background-color: white;
     width: 250px;
-    height: 150px;
     padding: 10px;
-    border-radius: 5px;
-    margin: 10px; 
+    margin: 10px 5px;
+    border-radius: 10px;
+    margin-block: 10px; 
+    text-align: center;
 }
+
+.advantages-section__cards__card:hover{
+    cursor: pointer;
+    background-color: rgb(200, 200, 200);
+}
+
+.advantages-section__cards__card__title{
+    color: grey;
+    margin-top: 10px;
+}
+
 
 .advantages-section__cards__card > img{
     height: 50px;
@@ -247,8 +300,24 @@ body{
 }
 
 @media (max-width: 576px) {
+    .advantages-section__title{
+        font-size: 50px;
+        text-align: center;
+    }
+
     .advantages-section__cards{
         padding-left: 0;
+        padding-inline: 40px;
+
+    }
+
+    .advantages-section__cards__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-block: 20px;
+        min-height: 150px ;
     }
 
     .advantages-section__description{
@@ -273,4 +342,18 @@ body{
 
 .footer__item{
     margin-inline:20px;
+    font-weight: 300;
+}
+
+.footer__item:hover{
+    border-bottom: 1px solid white;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+@media (max-width: 576px) {
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
 }
