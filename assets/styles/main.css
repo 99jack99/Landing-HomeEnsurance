@@ -18,9 +18,7 @@ body{
 }
 
 /* POP UP FORM */
-
-
-.pop{
+.pop-up{
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -31,48 +29,54 @@ body{
     border-radius: 20px;
 }
 
-.cont-input{
+.pop-up__title{
+    margin-block: 30px;
+    font-weight: 500;
+    margin-inline: 20px;
+}
+
+.pop-up__description{
+    font-size: 22px;
+    font-weight: 200;
+}
+
+.highlighted--red{
+    color: red;
+}
+
+.container-input{
     position: relative;
     padding: 10px;
     margin-block: 10px;
-}
-
-.borde{
-    height: 42px;
-    width: 250px;
-
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-
-    padding-left: 10px;
-
-    border: 2px solid red;
-
-    border-radius: 5px;
-
     
 }
 
-.inputo{
-    height: 40px;
-    width: 250px;
+.styled-label{
+    height: 45px;
+    width: 300px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 10px;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+.styled-input{
+    height: 47px;
+    width: 300px;
     position: absolute;
     top: 35px;
     left: 20px;
-
     border-style: none;
-
     border-radius: 5px;
-    background-color: rgb(162, 160, 160);
-
+    background-color: lightgrey;
     transition: 0.5s;
-
     padding-left: 5%;
     
 }
 
-.inputo:focus{
+.styled-input:focus{
     top: 0;
     left: 0;
     margin: 10px;
@@ -81,11 +85,13 @@ body{
 
 .form-button{
     margin-top: 20px;
-    padding: 10px 70px;
+    padding: 10px 60px;
     background-color: red;
     color: white;
-    border-style:none ;
+    border-style: none;
     border-radius: 5px;
+    font-size: 21px;
+    margin-block: 20px;
 }
 
 
@@ -206,6 +212,7 @@ body{
 .header__right__logo{
     height: 100px;
     width: 200px;
+    margin-top: 20px;
 }
 
 @media (max-width: 576px) {
@@ -331,13 +338,9 @@ body{
     text-align: center;
 }
 
-/* .advantages-section__cards__card:hover{
+.advantages-section__cards__card:hover{
     cursor: pointer;
-    background-color: rgb(200, 200, 200);
-} */
-
-.advantages-section__cards__card:is(.advantages-section__cards__card__title):hover{
-    color: blue;
+    background-color: whitesmoke;
 }
 
 .advantages-section__cards__card__title{
@@ -359,7 +362,6 @@ body{
     .advantages-section__cards{
         padding-left: 0;
         padding-inline: 40px;
-
     }
 
     .advantages-section__cards__card{
