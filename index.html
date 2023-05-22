@@ -14,13 +14,48 @@
     <title>Catalana occidente</title>
   </head>
   <body>
-    <div class="wall">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="pop">
+              <!-- <div class="pop-up-form"> -->
+                <h2>Rellena estos campos, y <strong class="highlighted--red">recibe tu precio!</strong></h2>
+                <p>Rellena los campos con tus datos y nos pondremos contacto contigo 
+                    <strong>gratis</strong> y <strong>sin compromiso</strong>  
+                </p>
+                <div class="cont-input">
+                    <div class="borde">Nombre</div>
+                    <input type="text" class="inputo">
+                </div>
+                <div class="cont-input">
+                    <div class="borde">Apellidos</div>
+                    <input type="text" class="inputo">
+                </div>
+                <div class="cont-input">
+                    <div class="borde">Telefono</div>
+                    <input type="tel" class="inputo">
+                </div>
+                <div class="cont-input">
+                    <div class="borde">Email</div>
+                    <input type="text" class="inputo">
+                </div>
+                <div class="cont-input">
+                    <div class="borde">C. postal</div>
+                    <input type="tel" class="inputo">
+                </div>
+              <!-- </div> -->
+                <button type="button" class="form-button" data-bs-dismiss="modal">Conocer ahora</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="wall" id="wall">
       <div class="header row">
         <div class="header__left col-md-6 col-sm-12 col-xl-6 p-5">
           <h1 class="header__title">Asegura tu hogar y vive tranquilo</h1>
           <div class="header__left__price">
             <p>desde</p>
-            <span class="price-amount">170 <p class="uno">€ anual</p></span>
+            <span class="price-amount">170 <p class="small--text">€ anual</p></span>
             <p>maxima cobertura</p>
           </div>
 
@@ -30,7 +65,7 @@
               Consigue un <strong>15% de descuento</strong> entre Mayo y Junio
             </p>
           </div>
-          <button class="button">
+          <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="button">
             <div>
                 Solicita tu precio
             </div>
@@ -95,5 +130,4 @@
   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
   crossorigin="anonymous"
 ></script>
-
 </html>
