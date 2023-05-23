@@ -97,6 +97,24 @@ body{
     color: #858585;
 }
 
+.question{
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.question-label{
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.question-select{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: lightgrey;
+}
+
 .terms{
     width: 100%;
     display: flex;

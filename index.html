@@ -1,3 +1,10 @@
+<!-- <?php
+  include('server.php');
+  if(isset($_SESSION['paso1']) && $_SESSION['paso1'] == 1){
+    header('Location: '.$array_paginas[2]);
+  }
+?> -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -30,7 +37,7 @@
                 </div>
                 <div class="container-input">
                     <div class="styled-label">Telefono</div>
-                    <input required placeholder="Escribe aqui tu telefono" type="tel" class="styled-input" id="telefono">
+                    <input required placeholder="Escribe aqui tu telefono" type="tel" class="styled-input" id="telefono" pattern="[0-9]{1,2}">
                 </div>
                 <div class="container-input">
                     <div class="styled-label">Email</div>
@@ -38,7 +45,15 @@
                 </div>
                 <div class="container-input">
                     <div class="styled-label">C. postal</div>
-                    <input required placeholder="Escribe aqui tu codigo postal" type="tel" class="styled-input" id="codigo_postal">
+                    <input required placeholder="Escribe aqui tu codigo postal" type="tel" class="styled-input" id="codigo_postal" pattern="[0-9]{4,5}">
+                </div>
+                <div class="question">
+                  <label class="question-label">Tienes ya seguro?</label>
+                  <select class="question-select">
+                    <option value="no" selected>Si, con Catalana Occidente </option>
+                    <option value="si">Si, con otra compania </option>
+                    <option value="si">No, no tengo </option>
+                  </select>
                 </div>
                 <div class="terms">
                   <div class="check-box">
