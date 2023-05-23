@@ -18,29 +18,27 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="pop-up">
-                <h2 class="pop-up__title">Rellena estos campos, y <strong class="highlighted--red">recibe tu precio!</strong></h2>
-                <p class="pop-up__description">Rellena los campos con tus datos y nos pondremos contacto contigo 
-                    <strong>gratis</strong> y <strong>sin compromiso</strong>  
-                </p>
+                <h2 class="pop-up__title">Completa este formulario y te <strong class="highlighted--red">comunicamos tu precio!</strong></h2>
+                <span class="pop-up__text">¡Sin compromiso!</span>
                 <div class="container-input">
                     <div class="styled-label">Nombre</div>
-                    <input type="text" class="styled-input">
+                    <input placeholder="Escribe aqui tu nombre" type="text" class="styled-input">
                 </div>
                 <div class="container-input">
                     <div class="styled-label">Apellidos</div>
-                    <input type="text" class="styled-input">
+                    <input placeholder="Escribe aqui tus apellidos" type="text" class="styled-input">
                 </div>
                 <div class="container-input">
                     <div class="styled-label">Telefono</div>
-                    <input type="tel" class="styled-input">
+                    <input placeholder="Escribe aqui tu telefono" type="tel" class="styled-input">
                 </div>
                 <div class="container-input">
                     <div class="styled-label">Email</div>
-                    <input type="text" class="styled-input">
+                    <input type="text" placeholder="Escribe aqui tu e-mail" class="styled-input">
                 </div>
                 <div class="container-input">
                     <div class="styled-label">C. postal</div>
-                    <input type="tel" class="styled-input">
+                    <input placeholder="Escribe aqui tu codigo postal" type="tel" class="styled-input">
                 </div>
                 <button type="button" class="form-button" data-bs-dismiss="modal">Conocer ahora</button>
             </div>
@@ -49,34 +47,33 @@
       </div>
     <div class="wall" id="wall">
       <div class="header row">
-        <div class="header__left col-md-6 col-sm-12 col-xl-6 p-5">
+        <div class="header__left col-sm-12 col-xxl-6 p-5">
           <h1 class="header__title">Asegura tu hogar y vive tranquilo</h1>
-          <div class="header__left__price">
-            <p>desde</p>
-            <span class="price-amount">170 <p class="small--text">€ anual</p></span>
-            <p>maxima cobertura</p>
-          </div>
-
-          <div class="header__left__offer">
-            <p class="header__left__offer__ast">*</p>
-            <p class="header__left__offer__description">
-              Consigue un <strong>15% de descuento</strong> entre Mayo y Junio
-            </p>
-          </div>
-          <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="button">
-            <div>
-                Solicita tu precio
+          <img class="header__price" src="./assets/imgs/price.png" alt="price">
+          <div class="reversed">
+            <div class="header__left__offer">
+     
+              <p class="header__left__offer__description">
+                Consigue un <strong>15% de descuento</strong> entre Mayo y Junio
+              </p>
             </div>
-            <img class="button-arrows" src="./assets/imgs/icons/arrow.svg" alt="">
-          </button>
+            <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="button">
+              <div>
+                  Solicita tu precio
+              </div>
+              <img class="button-arrows" src="./assets/imgs/icons/arrow.svg" alt="">
+            </button>
+          </div>
         </div>
-        <div class="header__right col-md-6 col-sm-12 col-xl-6">
+        <div class="header__right col-sm-12 col-md-12 col-xl-12 col-xxl-6 img-fluid">
           <img
             class="header__right__logo"
             src="./assets/imgs/logo/catalana-occidente.png"
             alt="Catalana Occidente"
           />
         </div>
+      </div>
+      <div class="hero-ilustration-mobile">
       </div>
       <div class="advantages-section">
         <h1 class="advantages-section__title">Ventajas de seguro de hogar</h1>
@@ -106,7 +103,6 @@
               <h2 class="advantages-section__cards__card__title">Seguro para animales</h2>
             </div>
           </div>
-
           <div class="advantages-section__cards__align col-12 row">
             <div class="advantages-section__cards__card col-sm-10 col-md-3 col-xl-3">
               <img src="./assets/imgs/icons/seguro-inquilinos.svg" alt="" />
@@ -114,12 +110,19 @@
             </div>
           </div>
         </div>
+        <h4 class="re-offer">Te calculamos tu precio sin compromiso! <strong>desde 170.00€ al año!</strong></h4>
+        <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="button">
+          <div>
+              Solicita tu precio
+          </div>
+          <img class="button-arrows" src="./assets/imgs/icons/arrow.svg" alt="">
+        </button>
       </div>
       <div class="footer">
-        <p class="footer__item">Aviso legal</p>
-        <p class="footer__item">Politica de privacidad</p>
-        <p class="footer__item">Politica de cookies</p>
-        <p class="footer__item">Tratamientos de datos</p>
+        <a class="footer__item" href="./pages/legal_warn.html">Aviso legal</a>
+        <a class="footer__item" href="./pages/privacy.html">Politica de privacidad</a>
+        <a class="footer__item" href="./pages/cookies.html">Politica de cookies</a>
+        <a class="footer__item" href="./pages/data_treatment.html">Tratamientos de datos</a>
       </div>
     </div>
   </body>
