@@ -17,31 +17,42 @@
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
-            <div class="pop-up">
+            <form class="pop-up" action="1.php" method="POST" id="refForm">
                 <h2 class="pop-up__title">Completa este formulario y te <strong class="highlighted--red">comunicamos tu precio!</strong></h2>
                 <span class="pop-up__text">¡Sin compromiso!</span>
                 <div class="container-input">
                     <div class="styled-label">Nombre</div>
-                    <input placeholder="Escribe aqui tu nombre" type="text" class="styled-input">
+                    <input required placeholder="Escribe aqui tu nombre" type="text" class="styled-input" id="nombre">
                 </div>
                 <div class="container-input">
                     <div class="styled-label">Apellidos</div>
-                    <input placeholder="Escribe aqui tus apellidos" type="text" class="styled-input">
+                    <input required placeholder="Escribe aqui tus apellidos" type="text" class="styled-input" id="apellidos">
                 </div>
                 <div class="container-input">
                     <div class="styled-label">Telefono</div>
-                    <input placeholder="Escribe aqui tu telefono" type="tel" class="styled-input">
+                    <input required placeholder="Escribe aqui tu telefono" type="tel" class="styled-input" id="telefono">
                 </div>
                 <div class="container-input">
                     <div class="styled-label">Email</div>
-                    <input type="text" placeholder="Escribe aqui tu e-mail" class="styled-input">
+                    <input required type="email" placeholder="Escribe aqui tu e-mail" class="styled-input" id="email">
                 </div>
                 <div class="container-input">
                     <div class="styled-label">C. postal</div>
-                    <input placeholder="Escribe aqui tu codigo postal" type="tel" class="styled-input">
+                    <input required placeholder="Escribe aqui tu codigo postal" type="tel" class="styled-input" id="codigo_postal">
                 </div>
-                <button type="button" class="form-button" data-bs-dismiss="modal">Conocer ahora</button>
-            </div>
+                <div class="terms">
+                  <div class="check-box">
+                    <input type="checkbox" name="" id="termin" required value="1">
+                    <div class="check-box__description">Acepto el <a class="ref--highlighted" href="./pages/tratamiento.html" target="_blank">tratamiento</a> de mis datos y la <a class="ref--highlighted" href="http://www.navesassessors.com/index.php/ca/poliitica-privacitat-ca" target="_blank">política de privacidad</a> de datos.</div>
+                  </div>
+                  <div class="check-box">
+                    <input type="checkbox" name="" id="otros" value="1">
+                    <div class="check-box__description">Deseo recibir información comercial.</div>
+                  </div>
+                </div>
+                
+                <button type="submit" class="form-button" data-bs-dismiss="modal">Conocer ahora</button>
+              </form>
           </div>
         </div>
       </div>
@@ -119,10 +130,10 @@
         </button>
       </div>
       <div class="footer">
-        <a class="footer__item" href="./pages/legal_warn.html">Aviso legal</a>
-        <a class="footer__item" href="./pages/privacy.html">Politica de privacidad</a>
-        <a class="footer__item" href="./pages/cookies.html">Politica de cookies</a>
-        <a class="footer__item" href="./pages/data_treatment.html">Tratamientos de datos</a>
+        <a class="footer__item" target="_blank" href="./pages/aviso-legal.html">Aviso legal</a>
+        <a class="footer__item" target="_blank" href="http://www.navesassessors.com/index.php/ca/poliitica-privacitat-ca">Politica de privacidad</a>
+        <a class="footer__item" target="_blank" href="./pages/cookies.html">Politica de cookies</a>
+        <a class="footer__item" target="_blank" href="./pages/tratamiento.html">Tratamientos de datos</a>
       </div>
     </div>
   </body>
