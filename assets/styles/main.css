@@ -31,9 +31,9 @@ body{
 }
 
 @media (min-width: 1450px){
-.wall{
-    margin-inline: 10%;
-}
+    .wall{
+        margin-inline: 10%;
+    }
 }
 
 /* POP UP FORM */
@@ -60,7 +60,7 @@ body{
 }
 
 .highlighted--red{
-    color: red;
+    color: var(--primary-color);
 }
 
 .container-input{
@@ -97,22 +97,34 @@ body{
     color: #858585;
 }
 
+input:valid{
+    background-color: lightgreen;
+}
+
 .question{
     margin-top: 30px;
-
     display: flex;
     flex-direction: column;
 }
 
 .question-label{
-    font-weight: 600;
+    background-color: black;
+    font-weight: 500;
     color: var(--primary-color);
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .question-select{
+    width: 310px;
+    height: 47px;
     padding: 10px;
-    border-radius: 10px;
+    border-style: none;
+    border-radius: 5px;
     background-color: lightgrey;
+    border: none;
 }
 
 .terms{
@@ -123,7 +135,6 @@ body{
     justify-content: center;
     margin-top: 20px;
     margin-inline: 20px;
-   /*  padding: 20px; */
 }
 
 .check-box{
@@ -137,14 +148,23 @@ body{
 
 .check-box__description{
     font-size: 16px;
-    font-weight: 200;
+    font-weight: regular;
     text-align: left;
-    margin-left: 10px;
+    margin-left: 5px;
+}
+
+.check-box__checkinput{
+    padding: 10px;
 }
 
 input[type="checkbox"]{
-    padding: 5px;
-    background-color: red;
+    height: 20px;
+    width: 20px;
+}
+
+.sm-info-tx{
+    font-size: 12px;
+    font-style: italic;
 }
 
 .ref--highlighted{
@@ -161,7 +181,7 @@ input[type="checkbox"]{
 .form-button{
     margin-top: 20px;
     padding: 10px 60px;
-    background-color: red;
+    background-color: var(--primary-color);
     color: white;
     border-style: none;
     border-radius: 5px;
@@ -561,3 +581,5 @@ input[type="checkbox"]{
         align-items: center;
     }
 }
+
+

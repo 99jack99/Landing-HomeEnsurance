@@ -1,11 +1,4 @@
 <?php
-
-
-// Este archivo es mas de utilidad, 
-// guardaremos aqui const para pasarlas despues y funciones
-
-
-
 	session_start(['name' => 'nueva']);
 	define('URL_APP','http://startend-leads.es/leadsapp');
 	//Id de la campaña, este ID, es de la aplicación de gestión Demalia
@@ -49,7 +42,7 @@
 	define('CONVERSION',$_SESSION['track']);
 	
 	//Versión del formulario para estadisticas internas
-	define('FORM_SEND',212);
+	define('FORM_SEND',1);
 	
 	//Ip usuario
 	define('IP_USUARIO',$_SERVER['REMOTE_ADDR']);
@@ -233,14 +226,14 @@
 			return 1;	
 		} 
 	}
-	function categoria($personalizado2, $IDsAdmitidos){
+	function categoria($personalizado1, $IDsAdmitidos){
 		//Comprobar si existen códigos postales
 		$existe_ids = strpos($IDsAdmitidos, ';');
 		if($existe_ids === false){
 			//No existen por lo tanto el código postal pasado en función no es válido
 			return false;	
 		}else{
-			$codigo_a_comprobar = $personalizado2;
+			$codigo_a_comprobar = $personalizado1;
 			
 			//Arrya codigos admitidos
 			$array_codigos = explode(';',$IDsAdmitidos);
@@ -376,16 +369,9 @@
 	    $x = strtolower($x);    
 	        
 	    return $x;
-
-		
 	}
-
-
-	// EL PIXEL ES UNA COOKIE DE LA PLATAFORMA PARA SABER QUE EL USUARIO A ENTRADO EN TU SERVICIO.
-	
-
-	/* define('PIXEL_FACEBOOK_TOKEN', 'EAAJ7u9WtMJQBAHSSCtZCpZCnls05bgqPF3ikOKNyIWGBN4uScWw1jj3BGcTCgiZCK8nZBiO5oznzxLspXgg9uNCmZAOynKBkWXX1ZCj6osuNVo12X4M7V9W1WDAYhPVXZAqZCmKpTzjvgUlaHUxBjXV5evZAHkwHGE4GZBIqpiTvCR2QQZBXcvAEtSk');
-	define('PIXEL_FACEBOOK_ADS_ID', '508220693524318');
+	define('PIXEL_FACEBOOK_TOKEN', 'EAAJ7u9WtMJQBAOdURNJbbZBNboxZC4cuFE8O3QUSbuDdkDeLQy69h3UL98VSvOZA48qInhlAbiEK6vzLqqf5jHTE2rtpm2ZAfJob1eZCaTtIJkcxXKuQlLJfxOZBV2trw0QatIRfyVZC4ErxBdbx8XfT9IVKElZBzUIysYpZBSwC4ZAx1eZCEDtkag4OjexnWcmqRAZD');
+	define('PIXEL_FACEBOOK_ADS_ID', '1602073256631158');
 	if(!isset($_SESSION['PIXEL_FACEBOOK_EVENT_ID'])){
 			define('PIXEL_FACEBOOK_EVENT_ID', $_SESSION['PIXEL_FACEBOOK_EVENT_ID']);
 		}else{
@@ -393,5 +379,5 @@
 			$_SESSION['PIXEL_FACEBOOK_EVENT_ID'] = $event_id;
 			define('PIXEL_FACEBOOK_EVENT_ID', $event_id);
 		}
-	require('pixel_facebook.php'); */
+	require('pixel_facebook.php');
 ?>
