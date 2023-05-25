@@ -117,13 +117,13 @@ if (isset($_SESSION['paso1']) && $_SESSION['paso1'] == 1) {
               <div class="check-box__description">Acepto el <a class="ref--highlighted" href="./pages/tratamiento.html"
                   target="_blank">tratamiento</a> de mis datos y la <a class="ref--highlighted"
                   href="http://www.navesassessors.com/index.php/ca/poliitica-privacitat-ca" target="_blank">política de
-                  privacidad</a> de datos. <p class="sm-info-tx">(Obligatorio)</p></div>
+                  privacidad</a> de datos. <span class="sm-info-tx">(Obligatorio)</span></div>
             </div>
             <div class="check-box">
               <div class="check-box__checkinput">
                 <input type="checkbox" id="otros" name="otros" value="1">
               </div>
-              <div class="check-box__description">Deseo recibir información comercial.<p class="sm-info-tx">(Opcional)</p></div>
+              <div class="check-box__description">Deseo recibir información comercial.<span class="sm-info-tx">(Opcional)</span></div>
             </div>
           </div>
 
