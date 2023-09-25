@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/styles/main.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <title>Catalana occidente</title>
+
+</head>
+
+<body>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form class="pop-up" name="regForm" action="1.php" method="POST">
+          <h2 class="pop-up__title">Completa este formulario y te <strong class="highlighted--red">comunicamos tu
+              precio!</strong></h2>
+          <span class="pop-up__text">¡Sin compromiso!</span>
+          <div class="container-input">
+            <div class="styled-label">Nombre</div>
+            <input required placeholder="Escribe aqui tu nombre" type="text" class="styled-input" id="nombre"
+              name="nombre">
+          </div>
+          <div class="container-input">
+            <div class="styled-label">Apellidos</div>
+            <input required placeholder="Escribe aqui tus apellidos" type="text" class="styled-input" id="apellidos"
+              name="apellidos">
+          </div>
+          <div class="container-input">
+            <div class="styled-label">Telefono</div>
+            <input required placeholder="Escribe aqui tu telefono" type="tel" class="styled-input" id="telefono"
+              pattern="[0-9]{9}" name="telefono">
+          </div>
+          <div class="container-input">
+            <div class="styled-label">Email</div>
+            <input required type="email" placeholder="Escribe aqui tu e-mail" class="styled-input" id="email"
+              name="email">
+          </div>
+          <div class="container-input">
+            <div class="styled-label">Código Postal</div>
+            <input required placeholder="Escribe aqui tu codigo postal" type="tel" class="styled-input"
+              id="codigo_postal" name="codigo_postal" pattern="[0-9]{4,5}">
+          </div>
+          <div class="container-input">
+            <label class="styled-label">¿Tienes ya seguro de hogar?</label>
+            <select class="styled-input" required id="personalizado1" name="personalizado1">
+              <option value="" selected disabled>--</option>
+              <option value="NO">No, no tengo </option>
+              <option value="OCCIDENT">Si, con Catalana Occidente </option>
+              <option value="OTRA">Si, con otra compañia </option>
+            </select>
+          </div>
+          <div class="terms">
+            <div class="check-box">
+              <div class="check-box__checkinput">
+                <input type="checkbox" id="termin" name="termin" required value="1">
+              </div>
+              <div class="check-box__description">Acepto el <a class="ref--highlighted" href="./pages/tratamiento.html"
+                  target="_blank">tratamiento</a> de mis datos y la <a class="ref--highlighted"
+                  href="http://www.navesassessors.com/index.php/ca/poliitica-privacitat-ca" target="_blank">política de
+                  privacidad</a> de datos. <span class="sm-info-tx">(Obligatorio)</span></div>
+            </div>
+            <div class="check-box">
+              <div class="check-box__checkinput">
+                <input type="checkbox" id="otros" name="otros" value="1">
+              </div>
+              <div class="check-box__description">Deseo recibir información comercial.<span class="sm-info-tx">(Opcional)</span></div>
+            </div>
+          </div>
+
+          <button type="submit" class="form-button">Conocer ahora</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="wall" id="wall">
+    <div class="header row">
+      <div class="header__left col-sm-12 col-xxl-6 p-5">
+        <h1 class="header__title">Asegura tu hogar y vive tranquilo</h1>
+        <img class="header__price" src="./assets/imgs/price.png" alt="price">
+        <div class="reversed">
+          <div class="header__left__offer">
+            <p class="header__left__offer__description">
+              Consigue un <strong>15% de descuento</strong> entre Mayo y Junio
+            </p>
+          </div>
+          <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="button">
+            <div>
+              Solicita tu precio
+            </div>
+            <img class="button-arrows" src="./assets/imgs/icons/arrow.svg" alt="">
+          </button>
+        </div>
+      </div>
+      <div class="header__right col-sm-12 col-md-12 col-xl-12 col-xxl-6 img-fluid">
+        <img class="header__right__logo" src="./assets/imgs/logo/catalana-occidente.png" alt="Catalana Occidente" />
+      </div>
+    </div>
+    <div class="hero-ilustration-mobile">
+    </div>
+    <div class="advantages-section">
+      <h1 class="advantages-section__title">Ventajas de seguro de hogar</h1>
+      <span class="advantages-section__description">
+        El seguro Hogar te dará la <strong>máxima protección con coberturas para los riesgos a su estructura, el
+          interior, tus pertenencias y tu
+          familia.</strong> Un seguro de hogar multirriesgo en el que podrás incluir a tu
+        mascota, y proteger a todos tanto dentro como fuera de la vivienda.
+      </span>
+      <div class="advantages-section__cards row">
+        <div class="advantages-section__cards__align col-12 row">
+          <div class="advantages-section__cards__card col-sm-10 col-md-3 col-xl-3">
+            <img src="./assets/imgs/icons/seguro-hogar.svg" alt="" />
+            <h2 class="advantages-section__cards__card__title">Servicios de seguro hogar</h2>
+          </div>
+          <div class="advantages-section__cards__card col-sm-10 col-md-3 col-xl-3">
+            <img src="./assets/imgs/icons/servicio-24h.svg" alt="" />
+            <h2 class="advantages-section__cards__card__title">Servicio tecnico 24h</h2>
+          </div>
+        </div>
+        <div class="advantages-section__cards__align col-12 row">
+          <div class="advantages-section__cards__card col-sm-10 col-md-3 col-xl-3">
+            <img src="./assets/imgs/icons/asistencia-online.svg" alt="" />
+            <h2 class="advantages-section__cards__card__title">Asistencia online</h2>
+          </div>
+          <div class="advantages-section__cards__card col-sm-10 col-md-3 col-xl-3">
+            <img src="./assets/imgs/icons/seguro-animales.svg" alt="" />
+            <h2 class="advantages-section__cards__card__title">Seguro para animales</h2>
+          </div>
+        </div>
+        <div class="advantages-section__cards__align col-12 row">
+          <div class="advantages-section__cards__card col-sm-10 col-md-3 col-xl-3">
+            <img src="./assets/imgs/icons/seguro-inquilinos.svg" alt="" />
+            <h2 class="advantages-section__cards__card__title">Seguro para inquilinos</h2>
+          </div>
+        </div>
+      </div>
+      <h4 class="re-offer">Te calculamos tu precio sin compromiso! <strong class="highlighted--red">desde 170.00€ al
+          año!</strong></h4>
+      <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="button">
+        <div>
+          Solicita tu precio
+        </div>
+        <img class="button-arrows" src="./assets/imgs/icons/arrow.svg" alt="">
+      </button>
+    </div>
+    <div class="footer">
+      <a class="footer__item" target="_blank">Aviso legal</a>
+      <a class="footer__item" target="_blank">Politica de privacidad</a>
+      <a class="footer__item" target="_blank">Politica de cookies</a>
+      <a class="footer__item" target="_blank">Tratamientos de datos</a>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+</html>
