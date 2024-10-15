@@ -478,7 +478,7 @@ input[type="checkbox"]{
     background-image: url("../imgs/advantages-ilustration.svg");
     background-repeat: no-repeat;
     background-position: right;
-    background-size: auto;
+    background-size: 30rem;
 }
 
 .advantages-section__cards__align{
@@ -493,7 +493,7 @@ input[type="checkbox"]{
     justify-content: center;
     background-color: white;
     width: 250px;
-    padding: 10px;
+    padding: 20px 10px;
     margin: 10px 5px;
     border-radius: 10px;
     margin-block: 10px; 
@@ -569,10 +569,9 @@ input[type="checkbox"]{
 }
 
 .footer__item:hover{
-    border-bottom: 1px solid white;
     cursor: pointer;
-    font-weight: 400;
     color: white;
+    text-decoration: underline;
 }
 
 @media (max-width: 576px) {
